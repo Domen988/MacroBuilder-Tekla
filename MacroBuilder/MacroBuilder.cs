@@ -93,6 +93,19 @@ namespace TeklaMacroBuilder
 		{
 			return AppendMethodCall("Callback", callback, parameter, frame);
 		}
+		
+		/// <summary>
+		/// Invokes a popupcallback.
+		/// </summary>
+		/// <param name="callback">PopupCallback name.</param>
+		/// <param name="parameter">PopupCallback parameter.</param>
+		/// <param name="parameter2">PopupCallback parameter2.</param>
+		/// <param name="frame">Target frame.</param>
+		/// <returns>Reference to self for fluent interface pattern.</returns>
+		public MacroBuilder PopupCallback(string callback, string parameter, string parameter2, string frame)
+	        {
+	            	return AppendMethodCall("PopupCallback", callback, parameter, parameter2, frame);
+	        }
 
 		/// <summary>
 		/// Checks or unchecks a field.
